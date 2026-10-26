@@ -1,0 +1,17 @@
+# Data: downloaded by scripts/get_data.py, not committed
+data/
+
+# Secrets
+.env
+
+# Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
