@@ -136,7 +136,7 @@ I checked the missing values with `scripts/check_missing.py`.
 
 ### Patient count through the joins
 
-No patient was dropped. Every step has 566 rows and 566 distinct patients (see the table in Task 3), and the script stops with an `assert` if that ever changes. I used LEFT JOINs from `patients` so a patient with no sample or no mutations would still be kept with NULLs instead of disappearing.
+No patient was dropped. Every step has 566 rows and 566 distinct patients (see the table in Task 3), and the script stops with an `assert` if that ever changes. The feature query (`q3_patient_features.sql`) LEFT JOINs `samples` onto `patients`, and Query 1 LEFT JOINs `mutations`, so a patient with no sample or no mutations is kept instead of disappearing. Query 1 uses a plain `JOIN` to `samples`, which is safe here because every patient has exactly one sample (checked in Task 1), and the `assert` on 566 x 5 rows would catch it if that ever changed.
 
 ### How I handled each kind of gap
 
