@@ -59,4 +59,7 @@ I already figured stuff would be missing from my `base` conda environment becaus
 **What it gave me:** Claude wrote `data_dictionary.md`. It took the stage definition (AJCC pathologic stage) and the note that the database only has coding and splice-site mutations from the course repo's `generate_data.py` and `SOURCE.md`. I didn't change anything, but I did review it and made sure I understood what was being written and why I needed this data dictionary.
  
 **How I checked it:** compared the 11 rows in the dictionary against the header of the TSV (`head -1 output/feature_table.tsv`). Same 11 columns, none missing, no extras.
+
+## Other:
+**AI USAGE** given the extensive discussion on AI Usage in class, I wanted to make sure I wasn't missing anything so I figured AI would know the most about what exactly it id for me so after writing this I just ran it through to identify anything not disclosed, and it pointed out a lot of things that I simply was me asking AI to explain things to me like specific commands that I did not know what they did.
  
